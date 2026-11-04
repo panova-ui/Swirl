@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2 Goats 1 Chud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    .audio-button {
+      width: 150px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .audio-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>2 Goats 1 Chud</h1>
+
+  <img class="player-img" src="peter-griffin-family-guy.gif" alt="Peter Griffin">
+
+  <div class="nav-menu">
+    <a href="lebron.html">Bron</a>
+    <a href="steph.html">Mr Curry</a>
+    <a href="me.html">Me</a>
+    <p>Click chicken</p>
+  </div>
+
+  <br>
+
+  <audio id="sunshine-audio" src="you-are-my-sunshine-lebron-james.mp3"></audio>
+
+  <img 
+    class="audio-button"
+    src="images (3).jpeg"
+    alt="Play audio"
+    onclick="playAudio()"
+  >
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById("sunshine-audio");
+      audio.currentTime = 0;
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
